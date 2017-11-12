@@ -4,6 +4,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	min-width: 100px;
+	
 }
 
 /* Responsive Margin & Padding */
@@ -34,9 +35,6 @@ html, body {
 
 /* Typography */
 
-h1, h2, h3, h4, h5, h6, p, li, div {
-	font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
-}
 
 /* Header */
 
