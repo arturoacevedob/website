@@ -1,0 +1,109 @@
+/* Margin & Padding Reset */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	min-width: 100px;
+}
+
+/* Responsive Margin & Padding */
+
+@media (max-width: 678px) {
+	header {
+		margin: 0 0;
+		padding: 1em;
+	}
+	.container {
+		margin: 0 0;
+	}
+}
+
+@media (min-width: 678px) {
+	header {
+		margin: 4vh 2vw;
+		padding: 0px;
+	}
+	.container {
+		margin: 1vw 2vw;
+	}
+	.gallery img {
+		box-shadow: 0px 8px 15px #ddd;
+	}
+}
+
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6, p, li, div {
+	font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+}
+
+/* Header */
+
+header {
+	font-size: calc(0.75em + 1vmin);
+	text-align: center;
+}
+
+header ul, header li {
+	padding: 0 1vw;
+	display: inline;
+}
+
+.brand {
+	display: inline;
+	font-weight: 900;
+}
+
+/* SE Too Small for my name*/
+
+@media (max-width: 370px) {
+	#nav-brand {
+		display: none;
+	}
+}
+
+/* Gallery CSS */
+
+.gallery {
+	-webkit-column-count: 5;
+	-webkit-column-gap:   2vw;
+	-moz-column-count:    5;
+	-moz-column-gap:      2vw;
+	column-count:         5;
+	column-gap:           2vw; 
+}
+
+.gallery img {
+	margin-bottom: 1vw;
+	width: 100%
+}
+
+@media (max-width: 1440px) {
+  .gallery {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1280px) {
+  .gallery {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 960px) {
+  .gallery {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 736px) {
+  .gallery {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
