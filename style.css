@@ -51,7 +51,6 @@ header ul, header li {
 .brand {
 	display: inline;
 	font-weight: 900;
-	height: calc(0.5em + 1vmin);
 }
 
 /* SE Too Small for my name*/
