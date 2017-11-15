@@ -1,4 +1,4 @@
-/* -------- Global -------- */
+/* -------- Global -------- 
 
 html {
 	margin: 0;
@@ -7,6 +7,8 @@ html {
 	font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
 	font-size: calc(0.75em + 1vmin);
 }
+
+
 
 /* >------- Typography -------< */
 
@@ -69,7 +71,7 @@ LILIA		color: #F2F3F4;
 	
    <<<<<<<< Colors <<<<<<<< */
 
-/* ------- Body & Grid -------< */
+/* ------- Body & Grid -------<
 
 body {
 	margin: 4vh 3vw;
@@ -80,6 +82,8 @@ body {
 	grid-template-columns: auto;
 	grid-gap: 3vh;
 }
+
+*/
 
 /* >>------ Header ------<< */
 
