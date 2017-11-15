@@ -1,0 +1,180 @@
+/* -------- Global -------- */
+
+html {
+	margin: 3vh 2vw;
+	min-width: 100px;
+	
+	font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+	font-size: calc(0.75em + 1vmin);
+}
+
+/* >------- Typography -------< */
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #007AFF; /* A-BLUE */
+}
+
+a:active {
+	color: #0056BA; /* A-BLUE-DARKER */
+}
+
+a.active {
+  color: #007AFF; /* A-BLUE */
+}
+
+brand a {
+	color: #131516; /* JET */
+}
+
+nav ul li a {
+	color: #373D3F; /* RAVEN */
+}
+
+h1 {
+	color: #131516; /* JET */
+}
+
+h2 {
+	color: #373D3F; /* RAVEN */
+}
+
+p {
+	color: #373D3F; /* RAVEN */
+}
+
+/* >>>>>>>> Colors >>>>>>>>
+	
+JET			color: #131516;
+RAVEN		color: #373D3F;
+INDIGO		color: #093145;
+KELLY		color: #0D3C55;
+ALICE		color: #107896;
+A-BLUE		color: #007AFF;
+RUBY		color: #C02F1D;
+A-RED		color: #FF3B30;
+DAISY		color: #EFD469;
+A-YELLOW	color: #FFCC00;
+LILIA		color: #F2F3F4;
+	
+   <<<<<<<< Colors <<<<<<<< */
+
+/* ------- Body & Grid -------< */
+
+body {
+	display: grid;
+	grid-template-rows: 1em 1fr 8vh;
+	grid-template-columns: auto;
+	grid-gap: 3vh;
+}
+
+/* >>------ Header ------<< */
+
+header {
+	
+}
+
+/* >>>----- Navigation -----<<< */
+
+nav {
+	text-align: center;
+}
+
+/* >>>>---- Brading ----<<<< */
+
+brand {
+	display: inline;
+	padding-right: 1vw;
+	font-weight: 900;
+}
+
+@media (max-width: 370px) {
+	#nav-brand {
+		display: none;
+	}
+}
+
+@media (min-width: 370px) {
+	#nav-brand-small {
+		display: none;
+	}
+}
+
+nav ul, nav li {
+	padding: 0 1vw;
+	display: inline;
+	text-align: center;
+}
+
+/* >>------ Container ------<< */
+
+container {
+
+}
+
+/* >>>----- Gallery -----<<< */
+
+.gallery {
+	-webkit-column-count: 5;
+	-webkit-column-gap:   2vw;
+	-moz-column-count:    5;
+	-moz-column-gap:      2vw;
+	column-count:         5;
+	column-gap:           2vw;
+}
+@media (max-width: 1920px) {
+	.gallery {
+	-webkit-column-count: 4;
+	-webkit-column-gap:   2vw;
+	-moz-column-count:    4;
+	-moz-column-gap:      2vw;
+	column-count:         4;
+	column-gap:           2vw;
+	}
+}
+@media (max-width: 1365px) {
+	.gallery {
+	-moz-column-count:    3;
+	-webkit-column-count: 3;
+	column-count:         3;
+	}
+}
+@media (max-width: 1024px) {
+	.gallery {
+	-moz-column-count:    2;
+	-webkit-column-count: 2;
+	column-count:         2;
+	}
+}
+@media (max-width: 768px) {
+	.gallery {
+	-moz-column-count:    1;
+	-webkit-column-count: 1;
+	column-count:         1;
+	}
+}
+
+
+/* >>>>---- Images ----<<<< */
+
+.gallery {
+	
+}
+
+img {
+	height: auto;
+	width: 100%;
+	box-shadow: 0px 8px 15px #ddd;
+	margin: 1vw 0;
+}
+
+/* >>------ Footer ------<< */
+
+footer  {
+	color: grey;
+}
