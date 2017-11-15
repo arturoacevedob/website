@@ -1,4 +1,4 @@
-/* -------- Global -------- 
+/* -------- Global -------- */
 
 html {
 	margin: 0;
@@ -8,14 +8,12 @@ html {
 	font-size: calc(0.75em + 1vmin);
 }
 
-
-
-/* >------- Typography -------< 
+/* >------- Typography -------< */
 
 a {
 	text-decoration: none;
 	color: inherit;
-} */
+}
 
 a:hover {
 	text-decoration: none;
@@ -71,7 +69,7 @@ LILIA		color: #F2F3F4;
 	
    <<<<<<<< Colors <<<<<<<< */
 
-/* ------- Body & Grid -------<
+/* ------- Body & Grid -------< */
 
 body {
 	margin: 4vh 3vw;
@@ -83,21 +81,19 @@ body {
 	grid-gap: 3vh;
 }
 
-*/
-
 /* >>------ Header ------<< */
 
 header {
 	
 }
 
-/* >>>----- Navigation -----<<< 
+/* >>>----- Navigation -----<<< */
 
 nav {
 	text-align: center;
 }
 
-/* >>>>---- Brading ----<<<<
+/* >>>>---- Brading ----<<<< */
 
 brand {
 	display: inline;
