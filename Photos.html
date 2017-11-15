@@ -122,8 +122,8 @@
 			    "use strict";
 			
 			    const defaults = {
-			        src: "data-src",
-			        srcset: "data-srcset",
+			        data-src: "data-src",
+			        data-srcset: "data-srcset",
 			        selector: ".lazyload"
 			    };
 			
@@ -197,17 +197,17 @@
 			                entries.forEach(function (entry) {
 			                    if (entry.intersectionRatio > 0) {
 			                        self.observer.unobserve(entry.target);
-			                        let src = entry.target.getAttribute(self.settings.src);
-			                        let srcset = entry.target.getAttribute(self.settings.srcset);
+			                        let data-src = entry.target.getAttribute(self.settings.src);
+			                        let data-srcset = entry.target.getAttribute(self.settings.srcset);
 			                        if ("img" === entry.target.tagName.toLowerCase()) {
 			                            if (src) {
-			                                entry.target.src = src;
+			                                entry.target.src = data-src;
 			                            }
 			                            if (srcset) {
-			                                entry.target.srcset = srcset;
+			                                entry.target.srcset = data-srcset;
 			                            }
 			                        } else {
-			                            entry.target.style.backgroundImage = "url(" + src + ")";
+			                            entry.target.style.backgroundImage = "url(" + data-src + ")";
 			                        }
 			                    }
 			                });
@@ -229,17 +229,17 @@
 			
 			            let self = this;
 			            this.images.forEach(function (image) {
-			                let src = image.getAttribute(self.settings.src);
-			                let srcset = image.getAttribute(self.settings.srcset);
+			                let data-src = image.getAttribute(self.settings.src);
+			                let data-srcset = image.getAttribute(self.settings.srcset);
 			                if ("img" === image.tagName.toLowerCase()) {
 			                    if (src) {
-			                        image.src = src;
+			                        image.src = data-src;
 			                    }
 			                    if (srcset) {
-			                        image.srcset = srcset;
+			                        image.srcset = data-srcset;
 			                    }
 			                } else {
-			                    image.style.backgroundImage = "url(" + src + ")";
+			                    image.style.backgroundImage = "url(" + data-src + ")";
 			                }
 			            });
 			        },
@@ -307,46 +307,54 @@
 							 	  Images/512w/CDMX-SFO-01-512w.jpg 512w,
 							 	  Images/750w/CDMX-SFO-01-750w.jpg 750w"
 					 data-src="Images/750w/CDMX-SFO-01-750w.jpg" alt="">
-				<img srcset="Images/360w/CDMX-SFO-02-360w.jpg 360w,
+				<img class="lazyload"
+					 data-srcset="Images/360w/CDMX-SFO-02-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-02-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-02-750w.jpg 750w"
 					 sizes="(min-width:769px) 512px"
-					 src="Images/750w/CDMX-SFO-02-750w.jpg" alt="">
-				<img srcset="Images/360w/CDMX-SFO-03-360w.jpg 360w,
+					 data-src="Images/750w/CDMX-SFO-02-750w.jpg" alt="">
+				<img class="lazyload"
+					 data-srcset="Images/360w/CDMX-SFO-03-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-03-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-03-750w.jpg 750w"
 					 sizes="(min-width:769px) 512px"
-					 src="Images/750w/CDMX-SFO-03-750w.jpg" alt="">
-				<img srcset="Images/360w/CDMX-SFO-04-360w.jpg 360w,
+					 data-src="Images/750w/CDMX-SFO-03-750w.jpg" alt="">
+				<img class="lazyload"
+					 data-srcset="Images/360w/CDMX-SFO-04-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-04-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-04-750w.jpg 750w"
 					 sizes="(min-width:769px) 512px"
-					 src="Images/750w/CDMX-SFO-04-750w.jpg" alt="">
-				<img srcset="Images/360w/CDMX-SFO-05-360w.jpg 360w,
+					 data-src="Images/750w/CDMX-SFO-04-750w.jpg" alt="">
+				<img class="lazyload"
+					 data-srcset="Images/360w/CDMX-SFO-05-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-05-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-05-750w.jpg 750w"
 					 sizes="(min-width:769px) 512px"
-					 src="Images/750w/CDMX-SFO-05-750w.jpg" alt="">
-				<img srcset="Images/360w/CDMX-SFO-06-360w.jpg 360w,
+					 data-src="Images/750w/CDMX-SFO-05-750w.jpg" alt="">
+				<img class="lazyload"
+					 data-srcset="Images/360w/CDMX-SFO-06-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-06-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-06-750w.jpg 750w"
 					 sizes="(min-width:769px) 512px"
-					 src="Images/750w/CDMX-SFO-06-750w.jpg" alt="">
-				<img srcset="Images/360w/CDMX-SFO-07-360w.jpg 360w,
+					 data-src="Images/750w/CDMX-SFO-06-750w.jpg" alt="">
+				<img class="lazyload"
+					 data-srcset="Images/360w/CDMX-SFO-07-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-07-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-07-750w.jpg 750w"
 					 sizes="(min-width:769px) 512px"
-					 src="Images/750w/CDMX-SFO-07-750w.jpg" alt="">
-				<img srcset="Images/360w/CDMX-SFO-08-360w.jpg 360w,
+					 data-src="Images/750w/CDMX-SFO-07-750w.jpg" alt="">
+				<img class="lazyload"
+					 data-srcset="Images/360w/CDMX-SFO-08-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-08-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-08-750w.jpg 750w"
 					 sizes="(min-width:769px) 512px"
-					 src="Images/750w/CDMX-SFO-08-750w.jpg" alt="">
-				<img srcset="Images/360w/CDMX-SFO-09-360w.jpg 360w,
+					 data-src="Images/750w/CDMX-SFO-08-750w.jpg" alt="">
+				<img class="lazyload"
+					 data-srcset="Images/360w/CDMX-SFO-09-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-09-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-09-750w.jpg 750w"
 					 sizes="(min-width:769px) 512px"
-					 src="Images/750w/CDMX-SFO-09-750w.jpg" alt="">
+					 data-src="Images/750w/CDMX-SFO-09-750w.jpg" alt="">
 			</div>
 			
 		</container>
