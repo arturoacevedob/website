@@ -24,6 +24,10 @@ a:active {
 	color: #0056BA; /* A-BLUE-DARKER */
 }
 
+brand a:hover {
+	color: #707C80; /* STONE */
+}
+
 a.active {
   color: #007AFF; /* A-BLUE */
 }
@@ -60,6 +64,7 @@ RUBY		color: #C02F1D;
 A-RED		color: #FF3B30;
 DAISY		color: #EFD469;
 A-YELLOW	color: #FFCC00;
+STONE		color: #707C80;
 LILIA		color: #F2F3F4;
 	
    <<<<<<<< Colors <<<<<<<< */
