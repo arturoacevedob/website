@@ -10,12 +10,12 @@ html {
 
 
 
-/* >------- Typography -------< */
+/* >------- Typography -------< 
 
 a {
 	text-decoration: none;
 	color: inherit;
-}
+} */
 
 a:hover {
 	text-decoration: none;
@@ -91,13 +91,13 @@ header {
 	
 }
 
-/* >>>----- Navigation -----<<< */
+/* >>>----- Navigation -----<<< 
 
 nav {
 	text-align: center;
 }
 
-/* >>>>---- Brading ----<<<< */
+/* >>>>---- Brading ----<<<<
 
 brand {
 	display: inline;
