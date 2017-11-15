@@ -8,7 +8,63 @@ html {
 	font-size: calc(0.75em + 1vmin);
 }
 
-/* >------- Body & Grid -------< */
+/* >------- Typography -------< */
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #007AFF; /* A-BLUE */
+}
+
+a:active {
+	color: #0056BA; /* A-BLUE-DARKER */
+}
+
+a.active {
+  color: #007AFF; /* A-BLUE */
+}
+
+brand a {
+	color: #131516; /* JET */
+}
+
+nav ul li a {
+	color: #373D3F; /* RAVEN */
+}
+
+h1 {
+	color: #131516; /* JET */
+}
+
+h2 {
+	color: #373D3F; /* RAVEN */
+}
+
+p {
+	color: #373D3F; /* RAVEN */
+}
+
+/* >>>>>>>> Colors >>>>>>>>
+	
+JET			color: #131516;
+RAVEN		color: #373D3F;
+INDIGO		color: #093145;
+KELLY		color: #0D3C55;
+ALICE		color: #107896;
+A-BLUE		color: #007AFF;
+RUBY		color: #C02F1D;
+A-RED		color: #FF3B30;
+DAISY		color: #EFD469;
+A-YELLOW	color: #FFCC00;
+LILIA		color: #F2F3F4;
+	
+   <<<<<<<< Colors <<<<<<<< */
+
+/* ------- Body & Grid -------< */
 
 body {
 	display: grid;
@@ -52,6 +108,7 @@ brand {
 nav ul, nav li {
 	padding: 0 1vw;
 	display: inline;
+	text-align: center;
 }
 
 /* >>------ Container ------<< */
@@ -113,7 +170,7 @@ img {
 	height: auto;
 	width: 100%;
 	box-shadow: 0px 8px 15px #ddd;
-	margin: 1vh 0;
+	margin: 1vw 0;
 }
 
 /* >>------ Footer ------<< */
