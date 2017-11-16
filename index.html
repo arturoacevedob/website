@@ -9,53 +9,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Arturo Acevedo</title>
 		
-	<style>
+		<style>
+
+			/* -------- Global -------- */
 			
 			html {
 				margin: 0;
 				padding: 0;
 				
 				font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
-				font-size: calc(0.75em + 1vmin);		
-			}	
-		
-			body {
-				margin: 4vh 3vw;
-				min-width: 100px;
-				
-				display: grid;
-				grid-template-rows: 1em 1fr 8vh;
-				grid-template-columns: auto;
-				grid-gap: 3vh;
+				font-size: calc(0.75em + 1vmin);
 			}
 			
-			@media (max-width: 370px) {
-				#nav-brand {
-					display: none;
-				}
-			}
-			
-			@media (min-width: 370px) {
-				#nav-brand-small {
-					display: none;
-				}
-			}
-			
-			nav {
-				text-align: center;
-			}
-			
-			brand {
-				display: inline;
-				padding: 0 1vw;
-				font-weight: 900;
-			}
-			
-			nav ul, nav li {
-				padding: 0 1vw;
-				display: inline;
-				text-align: center;
-			}
+			/* >------- Typography -------< */
 			
 			a {
 				text-decoration: none;
@@ -79,22 +45,117 @@
 			  color: #007AFF; /* A-BLUE */
 			}
 			
+			brand a {
+				color: #131516; /* JET */
+			}
+			
+			nav ul li a {
+				color: #373D3F; /* RAVEN */
+			}
+			
+			h1 {
+				color: #131516; /* JET */
+			}
+			
+			h2 {
+				color: #373D3F; /* RAVEN */
+			}
+			
+			p {
+				color: #373D3F; /* RAVEN */
+			}
+			
+			/* >>>>>>>> Colors >>>>>>>>
+				
+			JET			color: #131516;
+			RAVEN		color: #373D3F;
+			INDIGO		color: #093145;
+			KELLY		color: #0D3C55;
+			ALICE		color: #107896;
+			A-BLUE		color: #007AFF;
+			RUBY		color: #C02F1D;
+			A-RED		color: #FF3B30;
+			DAISY		color: #EFD469;
+			A-YELLOW	color: #FFCC00;
+			STONE		color: #707C80;
+			LILIA		color: #F2F3F4;
+				
+			   <<<<<<<< Colors <<<<<<<< */
+			
+			/* ------- Body & Grid -------< */
+			
+			body {
+				margin: 4vh 3vw;
+				min-width: 100px;
+				
+				display: grid;
+				grid-template-rows: 1em 1fr 8vh;
+				grid-template-columns: auto;
+				grid-gap: 3vh;
+			}
+			
+			/* >>------ Header ------<< */
+			
+			header {
+				
+			}
+			
+			/* >>>----- Navigation -----<<< */
+			
+			nav {
+				text-align: center;
+			}
+			
+			/* >>>>---- Brading ----<<<< */
+			
+			brand {
+				display: inline;
+				padding: 0 1vw;
+				font-weight: 900;
+			}
+			
+			@media (max-width: 370px) {
+				#nav-brand {
+					display: none;
+				}
+			}
+			
+			@media (min-width: 370px) {
+				#nav-brand-small {
+					display: none;
+				}
+			}
+			
+			nav ul, nav li {
+				padding: 0 1vw;
+				display: inline;
+				text-align: center;
+			}
+			
+			/* >>------ Container ------<< */
+			
+			container {
+			
+			}
+			
+			/* >>>>---- Images ----<<<< */
+						
 			img {
 				height: auto;
-				width: 100%;
-				box-shadow: 0px 8px 15px #ddd;
+				width: 100%; box-shadow: 0px 8px 15px #ddd;
 				margin: 1vh 0;
 			}
+			
+			/* >>------ Footer ------<< */
 			
 			footer  {
 				position: relative
 				color: grey;
 			}
-			
+
 		</style>
 
-		
-		<link rel="stylesheet" type="text/css" href="Stylesheets/style.css"  media="none" onload="if(media!='all')media='all'"/>
+		<!-- <link rel="stylesheet" type="text/css" href="Stylesheets/style.css"  media="none" onload="if(media!='all')media='all'"/> -->
 		
 	</head>
 	 
