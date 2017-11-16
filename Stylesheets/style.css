@@ -171,13 +171,12 @@ container {
 /* >>>>---- Images ----<<<< */
 
 .gallery {
-	
+
 }
 
 img {
 	height: auto;
-	width: 100%;
-	box-shadow: 0px 8px 15px #ddd;
+	width: 100%; box-shadow: 0px 8px 15px #ddd;
 	margin: 1vh 0;
 }
 
