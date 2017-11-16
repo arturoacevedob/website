@@ -14,8 +14,10 @@
 			/* -------- Global -------- */
 			
 			html {
-				margin: 0;
+				margin: 0 auto;
 				padding: 0;
+				min-width: 100px;
+				max-width: 1920px;
 				
 				font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
 				font-size: calc(0.75em + 1vmin);
@@ -103,7 +105,7 @@
 			/* >>>----- Navigation -----<<< */
 			
 			nav {
-				text-align: center;
+				text-align: right;
 			}
 			
 			/* >>>>---- Brading ----<<<< */
@@ -112,6 +114,7 @@
 				display: inline;
 				padding: 0 1vw;
 				font-weight: 900;
+				float: left;
 			}
 			
 			@media (max-width: 370px) {
@@ -129,7 +132,6 @@
 			nav ul, nav li {
 				padding: 0 1vw;
 				display: inline;
-				text-align: center;
 			}
 			
 			/* >>------ Container ------<< */
@@ -141,38 +143,31 @@
 			/* >>>----- Gallery -----<<< */
 			
 			.gallery {
-				-webkit-column-count: 5;
-				-webkit-column-gap:   2vw;
-				-moz-column-count:    5;
-				-moz-column-gap:      2vw;
-				column-count:         5;
-				column-gap:           2vw;
-			}
-			@media (max-width: 1920px) {
-				.gallery {
 				-webkit-column-count: 4;
 				-webkit-column-gap:   2vw;
 				-moz-column-count:    4;
 				-moz-column-gap:      2vw;
 				column-count:         4;
 				column-gap:           2vw;
+			}
+			@media (max-width: 1920px) {
+				.gallery {
+				-webkit-column-count: 3;
+				-webkit-column-gap:   2vw;
+				-moz-column-count:    3;
+				-moz-column-gap:      2vw;
+				column-count:         3;
+				column-gap:           2vw;
 				}
 			}
 			@media (max-width: 1365px) {
-				.gallery {
-				-moz-column-count:    3;
-				-webkit-column-count: 3;
-				column-count:         3;
-				}
-			}
-			@media (max-width: 1024px) {
 				.gallery {
 				-moz-column-count:    2;
 				-webkit-column-count: 2;
 				column-count:         2;
 				}
 			}
-			@media (max-width: 768px) {
+			@media (max-width: 760px) {
 				.gallery {
 				-moz-column-count:    1;
 				-webkit-column-count: 1;
@@ -237,408 +232,408 @@
 					  data-srcset="Images/360w/CDMX-SFO-01-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-01-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-01-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-01-750w.jpg"
+					  data-src="Images/750w/CDMX-SFO-01-512w.jpg"
+					  sizes="(min-width:761px) 50vw"
 					  alt="Agave fields landscape near Tequila town.">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIAA8AGwMBEQACEQEDEQH/xABtAAACAwEAAAAAAAAAAAAAAAAEBgIFBwgQAAEEAgICAwAAAAAAAAAAAAECAwQFABEGEjGRFUFCAQADAQAAAAAAAAAAAAAAAAACBAYDEQACAgAFBQEAAAAAAAAAAAABAwACBAUhMVEREhQiQRX/2gAMAwEAAhEDEQA/ANYqbShXpDMtr3lS3GAnUyMXgzXQCWVnf1NfCK1SW9AeAcRZjF01JjlMKy/qBEmTzinkSCgpOifOErO1V+wG5M2xgy76kKydn1jgz9PMU/CdxOdeI8sXIG1OOoJ+wTkdRNwNTLX0B2jszbJlslBddc0P0TiLcO7rvNO+o2ED+SERZBR21mXhtOvWEHVHyQVyNRUerQ1geIzmaB8//9k="
 					  data-srcset="Images/360w/CDMX-SFO-02-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-02-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-02-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-02-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-02-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xABzAAACAwEAAAAAAAAAAAAAAAAEBwIFBggQAAIBBAEBBgcAAAAAAAAAAAECBAADBREGUQcUISIxkTRDU2JxgYIBAAIDAQAAAAAAAAAAAAAAAAMEAAECBREAAgEEAwEAAAAAAAAAAAAAAAECAwQxQREUURL/2gAMAwEAAhEDEQA/AOp43LcRf0LchT+656vqS2N9Op4H2szj7h0t9N/mjK6pywwbt5x0SefDPz096jmngr4ksoHM6Fv4hPeslCrwvD75RWW+U16kmkJ2MGPwvZcBWYxy4aMZEieAB0aorSMdmu1KWjE5Pm+KjeDZJhs6PmoippPJUptrBWP2g8cVipzTbH3UwkvRV8+DeyrumDuFHZT1B1Wa+DNER3anLlGJoyb2tfUNL0mNtCMzt24T43HP9URkMVKd+8P529etGQF5P//Z"
 					  data-srcset="Images/360w/CDMX-SFO-03-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-03-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-03-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-03-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-03-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xAByAAEAAgMAAAAAAAAAAAAAAAAFBAYBAwcQAAIBAwEHBQEAAAAAAAAAAAECAwAEBQYREyExQVFyEjI0NWKBAQADAQEAAAAAAAAAAAAAAAABAwQCBREAAwABAwUBAAAAAAAAAAAAAAECEQMEMQUSEyEyIv/aAAwDAQACEQMRAD8Axi4L25fdR3LBBVfjkUm8Cq2IRfRcuzjsaF6cNAmqTDmx1uMgu+thuu2znSHChZQ+H3ehpcNpl1DHGjafzUjplHiRza21Bl0V2sHQRjrT7eo3kTHa/SZrfWGTuLmGIyB2B4kVpKtVehdV4nmh7VObmkgshHcrHdBfaOtKenXDY6KnlEGPVOejQIyAkcOVFYQ15ZXMB8ObxNdbcJdhxdk/2E4H7KTyNR7LllXUeESci7HVNoCxP9rN/bN6Xwi6gDYOA5VOyxH/2Q=="
 					  data-srcset="Images/360w/CDMX-SFO-04-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-04-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-04-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-04-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-04-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xABuAAADAQEAAAAAAAAAAAAAAAADBAYFBxAAAgEEAQMEAwAAAAAAAAAAAQIDAAQFEQYSExQHIjFBQ1FxAQADAQEBAAAAAAAAAAAAAAACAwQFAAERAAICAwEBAQEAAAAAAAAAAAABAgMEETEhMhNB/9oADAMBAAIRAxEAPwBW/wCeZGF4eiBgH+QRSZ5FsXrRVXTVNb2XvDc1fS43y4wC7HZB+hT6Nz6R5Tdb8Xhq5fkzz5bHxW8+j+QA0bi/0BhYnDY9dcmtorh4ywJU6J3T9sHaOS83zGCiw630UUfcA0ABWZOc3trpU64wSX8JThvqBcQ3wtgrLGx1o0rEhc7PSvJvx3jafTW5Dl28/uQzGB2HtbdV3qVU97MSmyM46I27ueRPcyMMmxBPz1V4spaOdchDMu7YKDqZj7vs0K6X3fILBgecp0N1VidMrL+Q/PZJBBEQ7A/2pZ+zkMo4hawkc2cRLsT0/ugiloon0//Z"
 					  data-srcset="Images/360w/CDMX-SFO-05-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-05-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-05-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-05-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-05-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIAAsAGwMBEQACEQEDEQH/xABrAAADAQAAAAAAAAAAAAAAAAAEBQcDEAABBAIABQUAAAAAAAAAAAABAAIDBQcRBBIUIUETFyMyUQEAAwEBAAAAAAAAAAAAAAAAAQIDBAURAAMAAgEFAAAAAAAAAAAAAAABAwIRURIiJDFB/9oADAMBAAIRAxEAPwAbHGWrKOfpbiESAD7BXs6b7WLLCf0o/vFSQx/LCQVHyCrnEU2GaKTn5OkcQfKG78hxnJCCfNVE2VzTwjux/ENX5KdMSOUD3eoDvvpdBIwI1s3EzN2fKOXoZAVrI9s7A12hpZ8RxVKAZHEjZ2mBs//Z"
 					  data-srcset="Images/360w/CDMX-SFO-06-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-06-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-06-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-06-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-06-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xAByAAEBAQEBAAAAAAAAAAAAAAAGBAgFBxAAAgEEAQMEAwAAAAAAAAAAAQIDAAQFEQYHEyEIEjFBIlFxAQEBAQEBAAAAAAAAAAAAAAAEAwUCABEAAgEEAQMFAAAAAAAAAAAAAAECAxETMQQFEiIUITJBUf/aAAwDAQACEQMRAD8AGendo7DkqKYmXuHQ2K3eTUio+JnUYTfyNYTSQw24lkcKuvs0H1CSuWwtsNY/l1jdcgbFJ5YfdGhz1Kp2o1Z9GnT4+ZintqfNMzGTjYMyXHuO4aJ7+0tIoXjGwQNUCU5S2LjZHnjdRRlr5sc8vbjifRO/mjtvRdWRbY5/jlnnluoSDNryd1xGCTutjHypuHY37F171ejgupIUti6qdA/urWmHyU/w63U53XAz+12H4n4NUYJGW7h3W9kKswPuPkGjLbLy0Wcfkka6cs7H+muls99CBfI2a06a8URez//Z"
 					  data-srcset="Images/360w/CDMX-SFO-07-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-07-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-07-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-07-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-07-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xABwAAADAAMAAAAAAAAAAAAAAAAEBQYDBwgQAAECBQIGAwAAAAAAAAAAAAECAwAEBQYRB3ESISIxQVETFCUBAAMBAAAAAAAAAAAAAAAAAAIDBAERAAICAgICAwAAAAAAAAAAAAABAgMREiExBEETMlH/2gAMAwEAAhEDEQA/ANzyF60V1YbQ6gneF5vG6VCm4tQahKz7aKawhxkHqOYorhZJck83WnwVVNv6TVTUPzKUoWR1DPaES+VPA1KtoyjUSh45uIzvA7Wm6V/pxTZtTqDVR+KamF59Zi9PHZNJ5XBV1W7GJQBH2FBweMwStiL1fsRO3s+7MBCX1ls9xmFzsSYaXAWK/I4HHMu8XnnA7JmZZLSxIukAEiF2dhR+ovu0/rRP4/s2wUkkPpwSNodIyIZk+4YugH2f/9k="
 					  data-srcset="Images/360w/CDMX-SFO-08-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-08-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-08-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-08-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-08-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xAB1AAEAAwEAAAAAAAAAAAAAAAAGAgQHCBAAAQMCBAUFAQAAAAAAAAAAAgEDBAAGBQcRcRITMWGRFBUhIjJRAQACAwEBAAAAAAAAAAAAAAABAwIEBQAGEQACAgEEAgMAAAAAAAAAAAAAAQIDBBEUITESEyIjUf/aAAwDAQACEQMRAD8AZQc2m3y5Yviq70XhVDd3ZpyL8DvN6bGRxl0VTehs6hby5l87lnr+TDzQeFWBZcyPv+Kf0fNDZVkt3I4FgXC/FLiF1dd69Y44yXJkSlaOLavufDhaBINVVeiViZSXs+vot0vWPyEca+8TJOYUlwey0pPTsk4/hWdzRxEHCD1LnwulQdyO8WYMHWrDYqRpOX7TZthxNgW6a1OsVJ8DG42WRgootNivYUqFnQ6nsEOgHML6D4rPZeR//9k="
 					  data-srcset="Images/360w/CDMX-SFO-09-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-09-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-09-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-09-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-09-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIAAsAGwMBEQACEQEDEQH/xABtAAEBAQEAAAAAAAAAAAAAAAAEBQYIEAABAwMCBQUAAAAAAAAAAAABAgMEAAURBgczNFGRkhIUIUFhAQADAQEAAAAAAAAAAAAAAAACAwYBBBEAAgEEAwEAAAAAAAAAAAAAAAECAwQSURETFDH/2gAMAwEAAhEDEQA/ALMfcixRlBC5CSegNczjUK2Xk2VrBujap072qSEp+lE0DVQRGNvN8GpVqm1lHNN96S3W0dHmt9hzqm2Z5lvvS8q41W9vx9ORWmWiv1FHz1zVLgiPcmPgEofyglJ/DWYR0D2S2UXJcnHHc8q3FB9kthTLlZ47nlQ4oLsls//Z"
 					  data-srcset="Images/360w/CDMX-SFO-10-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-10-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-10-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-10-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-10-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xAB2AAACAwEAAAAAAAAAAAAAAAAEBwIGCAUQAAECBAQEBwAAAAAAAAAAAAECBAADBQYHERIhEyJBcRQXIzE0UZEBAAMBAQEAAAAAAAAAAAAAAAECAwQABREAAgIABgMBAAAAAAAAAAAAAAECAwQREhQhMRNBUVL/2gAMAwEAAhEDEQA/ANNrqVNkylTFz0JSkZkkxGONTNTweko92YlU1hSXTlmOKZIO/SK7ldCvCrLMpGCeLjm9686Yu24lypZOlUJdf41mQjhtTyQ41eE1H1E/sZN+W2LMi4l3u7b0lTen1zjTOulXvHpSpq9Iir7W+WKap4mV2bTFU1Z0y1DJX2YDhBPoZWS+g+HV9VS23q1MTkqYeYiHUIT4aF1yjymMrzluDrMVn3htrV+Qee36JyQta3HOpSu5zjogArhADgZADaEmciFvfNhquwM76ydR3jYTP//Z"
 					  data-srcset="Images/360w/CDMX-SFO-11-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-11-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-11-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-11-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-11-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xABtAAEBAQEAAAAAAAAAAAAAAAAGBAUHEAABBAECBQUAAAAAAAAAAAABAAIDBAUGERIUITFRIjVBcZEBAAMBAQAAAAAAAAAAAAAAAAMEBQIGEQABBAIDAQEAAAAAAAAAAAAAAQIDBBExEhMhMkH/2gAMAwEAAhEDEQA/AOFQ3WrsEdg59S+gLFqQcuwu28JezbbEnozWgWVTVmoGrZrWsjGWwk+oOSD7jJGYHFqujfkmykGHfkJnxNaGE9PxDbnBt2wG2yQOhTvYqk9YkLMBqHK0boFRoduexU20zs+ilBxangm1dbzVvHw2shM1rCdwwfCVro3lxQNI9cehznGnrxqmmcCi+mC3utoC/DV097hH9pexoLDsSa3c7kmDiO23lJ1dh5dAsdlTAH//2Q=="
 					  data-srcset="Images/360w/CDMX-SFO-12-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-12-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-12-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-12-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-12-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIAAsAGwMBEQACEQEDEQH/xABoAAADAQEAAAAAAAAAAAAAAAADBAUGCBAAAgEEAQMFAAAAAAAAAAAAAQIDAAQFEQYHIZEIIyRBcQEAAwEBAAAAAAAAAAAAAAAAAAIDAQQRAAICAwEAAAAAAAAAAAAAAAABAgMRElET/9oADAMBAAIRAxEAPwB2b1SYB51jix7FSe9RTtwNrEu23Xbj19GCbJ12KnKdqKwhBieR6m8cu1PtFd0quuRZV19M3LzfjpkY6+6p738G86enICMysCDo11HAVLfIXqLpLmQfhpZJGphWymQK97uXzQooNmAbIXuz8mTzWhk//9k="
 					  data-srcset="Images/360w/CDMX-SFO-13-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-13-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-13-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-13-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-13-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIACkAGwMBEQACEQEDEQH/xABvAAEBAQEBAAAAAAAAAAAAAAAFBgMEAhAAAQQBBAICAwAAAAAAAAAAAQACAwQRBQYSISIxEzNCU4EBAAIDAQAAAAAAAAAAAAAAAAMFAgQGAREAAgICAgMBAQAAAAAAAAAAAAECAwQRBRITITEiM//aAAwDAQACEQMRAD8Ac0wxNkaSVLZeKeLMha1g6IVurE7x2xZkch4p9QvWqpim8jhUZx6PQypn5I7DTZDPHl6UdhdES/cQrAOJ9KSe2Ql8L7Ze44rtL5j+ATzH2qjJ5r3cHbg10XLhMTugk96/ZpML+aCXWMkklB0XCMs6e6ZmACuL0Qa2ij24Tp+kyQjIc4Jrj3S6GezMZO1GNaOXycc5JS+6TlLY8xqukEjpEb8d5QvZa9B9WXi/g/HS7TF2vSB3zjTHbGKMcU7SeQGE9pxJRhozWTm1ytTNnPhgaScYCX5GO6/bG+LlRt9I8jUKmO8Kl2Re6MiZrbmT8z6RMCxUz2yvydMrq9ROitrDWSANfgH32tQuTqSMbPh72xWW1HYgAD0n5DMhctRNBxOBOl7kcvxM/Yk2jR6Ar/1lcj9ITCYPu/qMBZSUvoCCwsPhqpBT/9k="
 					  data-srcset="Images/360w/CDMX-SFO-14-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-14-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-14-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-14-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-14-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIAAsAGwMBEQACEQEDEQH/xABvAAACAwAAAAAAAAAAAAAAAAAFBgMEBxAAAgIABQEJAAAAAAAAAAAAAQIAAwQFBgcREhMhIjEyQUJRYQEBAQEBAQAAAAAAAAAAAAAAAwQAAgURAAIBBAIDAAAAAAAAAAAAAAABAgMEFDERQRMiUf/aAAwDAQACEQMRAD8A0OnW/WQoq4/TAwprssd3T+FXNtephLAvhcH6MenZNrYTvYc6FzOdyB1AJUePePG0ktmzI9C5bucgsYdi3nN4DrJRJbdYF7nIlETzZgPHuxv5LEmWQS4JG/YD5o7n5GaWhYgJ/UYQp//Z"
 					  data-srcset="Images/360w/CDMX-SFO-15-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-15-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-15-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-15-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-15-512w.jpg"
 					  alt="">
 					<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIAAsAGwMBEQACEQEDEQH/xABvAAACAwAAAAAAAAAAAAAAAAAEBQIGCBAAAQMCBAUFAAAAAAAAAAAAAgABAwQRBQYHIhQWMUGBITNRYXEBAQEBAQAAAAAAAAAAAAAAAAIFAQQRAAIBBAMBAQAAAAAAAAAAAAACAQMEETESEyFRFP/aAAwDAQACEQMRAD8AuGH60YFJ79Mcf6qfexOmgozg1hytIbBe1+91ve0GfnWQ6bUTKEtm46MXLs7pxcsGbeCHNWWi3NWxOz/aE3+PBxYzPpiioraoisU5v5UCaj52VZRfgTg5mVTuMn8oPVfGxIi/AuG515sRE9unq6SVG47NVFzofQmbRCzGXT5XC9RuU+ncqxg//9k="
 					  data-srcset="Images/360w/CDMX-SFO-16-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-16-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-16-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-16-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-16-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xABrAAACAgMAAAAAAAAAAAAAAAAEBgAIAwUHEAABBAEDAwUAAAAAAAAAAAABAAIDBBEFEjEGCFEHExUhUgEAAwEBAAAAAAAAAAAAAAAAAQIDAAQRAAMAAgMAAAAAAAAAAAAAAAABAgMREiEx/9oADAMBAAIRAxEAPwCyWk6dsIyF2ZM2yGONDRQqta0ZC4qfJlzJegYYjwEvgRZmirCV2ZmA5/SqrNorPo3cxZY0Ry1A53lcdZKS2XnEqejeRdz/ALQLZKoylnK2PWBS9Cr1d3M6zbY+GgwRAj6Kfk6J8Ejk9v1b6wnsyS/KSjc7ONyPZuhJqk7+Uz8DPpLZO/kqcj2+wOUnHJTomwfJ8oGP/9k="
 					  data-srcset="Images/360w/CDMX-SFO-17-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-17-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-17-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-17-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-17-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xABwAAACAwEAAAAAAAAAAAAAAAACBgEEBQcQAAEDAwIFBQAAAAAAAAAAAAECAwQABREhMQYHIkFxExQVUYEBAAMBAQEAAAAAAAAAAAAAAAECAwYEABEAAgICAwEBAAAAAAAAAAAAAAECAwYREhYiBSH/2gAMAwEAAhEDEQA/AIncQQ7a4lLjHSds1qZ5FYZCvFK5I17BxBb5x6o2E/YqcMhm36PW4tCC8m0DCkuFuOwpR8V0r76ILHZMpOxQHFD2vel7EivWBF5g2ic+hl+K0XBthIrKzWzbUWKCGzljamI8Bv5CO56x7EbVN1iTnyezpTFrjt4cjoSkHcYpNNMonHiA5w8y4suF0gq13ofoNi9YUIWhIUhKvIzXQc4zwW2wdG0j8pQllzReBpQYQSTnc0jGP//Z"
 					  data-srcset="Images/360w/CDMX-SFO-18-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-18-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-18-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-18-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-18-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xAB3AAACAwEAAAAAAAAAAAAAAAAGBwEECAUQAAIBAwMDAwUAAAAAAAAAAAEDAgAEBQYREiExUQcTYRYiMkFxAQACAgMBAAAAAAAAAAAAAAACBgMEAAUHAREAAgEEAQQDAAAAAAAAAAAAAQIAAwQFESEGEkFRFRYi/9oADAMBAAIRAxEAPwBnPVZqtwZwAPim+mpJ4inVrKBzL2D1BireftuWSyI6dO1ULtmVu2W7dgy9xgB6n5BGWuGKVGX8ArbY65FNghE12QTvQvuKdunWFkiFS2J8U1KqkbiqcgVOtzSa8bzSJ3cxxj+65BQytekdgzqdxi6FcaIkTThkIk5PBsvjrVhswznbCVlwwUaUwQzdq+5gx1nbwifkUXzjKfyIJwCvwx4iwvslqBN21QtgRGW341YHUdx7kP1a09TQGSJ+nHHc78DS75jFBDRspStZ8iZfee5rx4aTrNJ99g3O23ah8SWD1wpZdMlcCd/FDMn/2Q=="
 					  data-srcset="Images/360w/CDMX-SFO-19-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-19-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-19-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-18-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-18-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIAAsAGwMBEQACEQEDEQH/xABqAAADAQEAAAAAAAAAAAAAAAAFBgcBBBAAAgIBAgUFAAAAAAAAAAAAAwQBAgAFIQYHERJhMTNBUXEBAAMBAAAAAAAAAAAAAAAAAAIDBAYRAAICAgMBAAAAAAAAAAAAAAABAgMRIQYWUTH/2gAMAwEAAhEDEQA/AM5ajOneIOyMgfjunCp5BbXpyIr+PU27USlzqCkC2AO8eMb2Sa3klfGK3rAC4leVGra0LCmemUQ5TZFfRfVa/CSu8QtQ0SKJC7e7bbC7VZ6H1evwB6e84M9a0YJWOvpE5hppYNxBj3ozrdlrdWLzt95OPSRw6kywSt4uW9o8zhRAloWC+5b9yjCE5Z//2Q=="
 					  data-srcset="Images/360w/CDMX-SFO-20-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-20-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-20-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-20-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-20-512w.jpg"
 					  alt="">
 					<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIAAsAGwMBEQACEQEDEQH/xABxAAABBQAAAAAAAAAAAAAAAAAFAgMGBwgQAAEDAwMDBQAAAAAAAAAAAAECAwQABREGIjEHEiEUFiQyQQEAAgIDAAAAAAAAAAAAAAAAAQIDBQAEBhEAAgEEAgMAAAAAAAAAAAAAAAECAwUVQREWBjFR/9oADAMBAAIRAxEAPwB+1dRbnHkoMltpxo84Nb+VqbKaVhpaJra+okOY3si7v2md04Qi8fixM7XUZCF/G3DiszDXoPXo7YF9/g+fRVJmpA69D6Z+gPOmUEFxZT3cZqiZ0aLP0d4fKB9ezOKjZJEOy22zbnFFIKs80mx2CW2mygbaIvB//9k="
 					  data-srcset="Images/360w/CDMX-SFO-21-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-21-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-21-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-21-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-21-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIAAsAGwMBEQACEQEDEQH/xABxAAABBQAAAAAAAAAAAAAAAAAFAgMGBwgQAAEDAwMDBQAAAAAAAAAAAAECAwQABREGIjEHEiEUFiQyQQEAAgIDAAAAAAAAAAAAAAAAAQIDBQAEBhEAAgEEAgMAAAAAAAAAAAAAAAECAwUVQREWBjFR/9oADAMBAAIRAxEAPwB+1dRbnHkoMltpxo84Nb+VqbKaVhpaJra+okOY3si7v2md04Qi8fixM7XUZCF/G3DiszDXoPXo7YF9/g+fRVJmpA69D6Z+gPOmUEFxZT3cZqiZ0aLP0d4fKB9ezOKjZJEOy22zbnFFIKs80mx2CW2mygbaIvB//9k="
 					  data-srcset="Images/360w/CDMX-SFO-22-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-22-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-22-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-22-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-22-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xAB2AAADAQAAAAAAAAAAAAAAAAAFBgcEEAACAQMDAwMFAAAAAAAAAAABAgMABBEFBhIHEyEiQWEUMXGRoQEAAgMBAQAAAAAAAAAAAAAAAwYCBAUAAREAAgEDAwQDAQAAAAAAAAAAAAECAwQRBRUxEiEiQTJRUmL/2gAMAwEAAhEDEQA/ALNHiZQpckU2xj0CdUr9aCMUbdkoz8l9s0KUop5R0arxhmO5ggVDyC8vbNEVXPs8UkvQP70C+Mp4+allfYRV3jgiu3957zudSX6xUtoAfVk48Ul1NXqzXixsjolKL8hx17qZHbzWttbzKx8CRhQI3tzNPLD7XbRx2FXqFrO770ifRXdoiuQVNVIalWXabLMtKt38ETprvqcWJzP/AGj7n/RHaY/kKbymmS6IWWRRn7BiK62SwFqt5Fq9Zsxnkc/mjU+WQqcFj6Yu76VGHZmHyc1j6ku5dseRveNOR9C/qsc2T//Z"
 					  data-srcset="Images/360w/CDMX-SFO-23-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-23-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-23-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-23-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-23-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIAAsAGwMBEQACEQEDEQH/xABtAAEBAQEAAAAAAAAAAAAAAAAGBwIFEAABAwMEAQUAAAAAAAAAAAACAQMEAAURBhITMSEzQVFScQEAAQUBAAAAAAAAAAAAAAAAAwIEBQYHAREAAgEEAwEAAAAAAAAAAAAAAQIAAwURMQQVURL/2gAMAwEAAhEDEQA/AKRAftRiJnMDKdrmrAbtxxoyv9dyjtYjcuFhk27iKUC7EymFpl2tJHLAx319Z0+SsmU/W1vnahKxT4W5gfAvKlJS8oHyphRaqhTDCcuZZtKlKcJJIIir1Uqt9p43I9rRUzqBIEyUo45zx+1lxJmo/I8iS3PvJhOUsY+aA7GLRFxqbcZaMzdIEU/t710MYllEPyfXPvujhj7AFF8n/9k="
 					  data-srcset="Images/360w/CDMX-SFO-24-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-24-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-24-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-24-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-24-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIAAsAGwMBEQACEQEDEQH/xABxAAADAQEAAAAAAAAAAAAAAAADBQYECBAAAgICAAQHAAAAAAAAAAAAAQIDBAAGBRJRcRETIiQxYZEBAAICAwAAAAAAAAAAAAAAAAMGBAUAAQIRAAIBBAEFAQAAAAAAAAAAAAABAgMRFUEFBAYWMVEh/9oADAMBAAIRAxEAPwCu4TvWnMVUWx44xT5uEtijHt+otFDDuunAANfjB+zkfKxfoJgprQSbaNTaMuLsZHfMXMwT/Wd4Co9Cp9u1LmPvE/cLm6f0149V+HIlaWRaxZXIPXEykrse6rsgDWbDAkzOT3ywSRDTG+t3bb8yPPIy9Ccj9RFWDUJM2SO/mN6j89cqW3csl6P/2Q=="
 					  data-srcset="Images/360w/CDMX-SFO-25-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-25-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-25-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-25-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-25-512w.jpg"
 					  alt="">
 					<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xAByAAACAwEAAAAAAAAAAAAAAAADBQAEBwYQAAEDAwMFAQAAAAAAAAAAAAECAwQABREGEiEHIjEyUUEBAAICAwEAAAAAAAAAAAAAAAQFAgcBAwYIEQACAgEEAwEBAAAAAAAAAAAAAgEDBQQSFDEGESEWMv/aAAwDAQACEQMRAD8AZR7A8T6GrhbWrB58jSWtIVVoaQ4G1uAK+UE+YrVtsyMKsFqnXfEfCPaec25SMiiUyCsDNj7Un1JTOn3s+hrfzVMcW0HN15OWEpgwT3fuKqZ/I2bot+vxlFn3IquN0mB5C5D6Uuuc4z4oPlvdO+R3Vo0oTZEFmPrybbN7MhoOoSO1X2iqszZV8kWanBVWtugSyOq8oPLCYycZ4oyM5YCfnqjrojbYsu4NoB2+cVxVP9Qd3d1JleoXFmc5lajg8c06jqBUw3swDlmdLgCzt8q5rReTXozi4kic8ASBuqMED//Z"
 					  data-srcset="Images/360w/CDMX-SFO-26-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-26-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-26-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-26-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-26-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xABxAAADAAMAAAAAAAAAAAAAAAADBgcBBAUQAAEDBAIBBAMAAAAAAAAAAAECAwQABREhBhIUIzEyQVFScQEAAgMBAAAAAAAAAAAAAAAABAUCBgcAEQABAwQDAQEAAAAAAAAAAAABAAIDBAURMQYSITIV/9oADAMBAAIRAxEAPwDYtF2t0pCSNHOxVpPLQTpZyzgOduThAtESc0FsrGT9U1pr22UZBSCs4rJTvIKzJ4xo71RwuSWmxPz4l2TGgsvraW6OyTg137EYRDeN1ThkJJRYpducCg71wd1jXU9sLezHgZXdg8sRAkojpkAKxs5+6YQmaM5CHmjhlb1eEe783uKI7nRzuSNdadSXVxi649VfisrGylxPil03kdwcluLU4vsVZNV99ZKXH1PmQxtAAConL1rHfClD+GoxfaOf8qUXZa/Oz2VnP5p1HpLnJq4MS5JIcJWMeyt0PUaU2bRLiwz5z3ot/L9RSg7RWF//2Q=="
 					  data-srcset="Images/360w/CDMX-SFO-27-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-27-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-27-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-27-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-27-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xAB0AAADAQEAAAAAAAAAAAAAAAAEBQYHCBAAAgEDAwIGAwAAAAAAAAAAAQIDAAQFBhEhEzEHEhQjQVIkMqEBAAEFAQAAAAAAAAAAAAAAAAMAAgQFBgcRAAIBBAICAwAAAAAAAAAAAAABAgMEBREhMSIyFBUz/9oADAMBAAIRAxEAPwBrpPxCx08aR3QCua1TyKkjI/TuL0uiws9U4iaURE7b/NJXO1sHPGTiPUhtL1N4JVbcdt6LTuiLUtJR7QO2FJYnapSu0C+OzmLE4K8kRJOm6eWufwy0VwdElj5lpjxNEgMI6siDlB3ps8jJLgfG1bCZs/qC3HWgtZoAn9qMsvUpdMfPHRqrlATeKupIyUMbErx2oqztTRDeJhvodZEBMQSgC8fHFUNt+hqLr1JLQksh1YoMjkF+R5quK68Crpext+dii9APaT9fqKzs35FxFcGdXdtb+pf8eLv9BRI9CcUf/9k="
 					  data-srcset="Images/360w/CDMX-SFO-28-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-28-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-28-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-28-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-28-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xAByAAADAQEAAAAAAAAAAAAAAAAEBQYCBxAAAQMDBAEFAAAAAAAAAAAAAQIDBAAFEQYSIUExFCIjNHEBAAEFAQAAAAAAAAAAAAAAAAIAAQMEBQYRAAIBAgcAAwAAAAAAAAAAAAABAgMxBBESFCFBURMyQv/aAAwDAQACEQMRAD8AWSYbjsr3N7XCcYrnnLSzQ+PMf29m5QopLSlJAGalo15p8MGeHzVhDcLjOeedKnSpQ6NXN1LtgLDJdAzV6vSWwkZAHVHup+ieFXhdNRgVqnOt4HkEisqUG+WaLaTHcAonRinYMYxmhivBZkjfLCmKlyUg5IPAolFjSWfJPC3znfkAI3c4pa5DaWdNuYA0g0QADVut9CL9G9JfVH5VSncPoE1IBsdHVTq46sKIgHpkcDxUbuGj/9k="
 					  data-srcset="Images/360w/CDMX-SFO-29-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-29-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-29-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-29-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-29-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xABsAAEBAQAAAAAAAAAAAAAAAAAIBgcQAAICAQMDAwUAAAAAAAAAAAECAwQABQYRByFREhMiFCNhcZIBAAMBAQEAAAAAAAAAAAAAAAMEBQYBAhEAAgIDAQEBAAAAAAAAAAAAAAECAwQRIRIFIv/aAAwDAQACEQMRAD8APO19w2NM1iK/C5V0IJHnGqpuL2gV0FNaYy+j28dM3doqM0qJYQAMpOUq8ptGfuwPL4W9+GrDWeQyJwB5wk8vwtsDDDc3wy3UaM9i9NNG/wAWbkZnbfqT9vRpKfmR8LYLIqto91jfknxjKTQZ9NB6Zz7i0y/G9QTRoT8uO2EVqh3YGylzWhNbNntaxX9mW2WbjuhOT822dr4+BsShUrqKI6bNEfbEDcL+MlOl7KynHQTaEUX1A+2n8jLs2TUaBoaItHlUUfoYi3+xmK4WHTZ3G44gGYD1ecMjxIRsUaGJSUU9vGd0gW2f/9k="
 					  data-srcset="Images/360w/CDMX-SFO-30-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-30-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-30-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-30-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-30-512w.jpg"
 					  alt="">
 					<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xABwAAEAAgMAAAAAAAAAAAAAAAAGBAUCAwcQAAICAgIBAwUAAAAAAAAAAAECAwQABREhEgYTQRUWIlGRAQEBAQEBAAAAAAAAAAAAAAADBAABAhEAAgIBBAIDAAAAAAAAAAAAAAECEQMEEyExEhQiMlH/2gAMAwEAAhEDEQA/ALjTa6r9PmRraM6oT4Kclhp2uxN1M5vrfUrxb+xTMHhGjkeXGbPpqV2HHJ8hkKFbbVBOJVJAyfadlLl5IMW5bcFmSFJGKoeAcb1U+Qxx6f0FXXQNO1hvcYcMGbFhqZ5O0AoJB6/qNW2ykZY+PI9sPnHlJNUzihTstdPRqRwtXrzlC3XZyXLjn2h1kpUbPs5W/JrgJPZzilk/DzyRbEknnx5t/cpgkGjCIAgkjvBl9z0yPESLi8Ejv4ylGGUHcKc/rOGP/9k="
 					  data-srcset="Images/360w/CDMX-SFO-31-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-31-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-31-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-31-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-31-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIAAsAGwMBEQACEQEDEQH/xABpAAACAwAAAAAAAAAAAAAAAAADBQQGBxAAAgEEAwEBAAAAAAAAAAAAAQIAAwQFEQcSIVEGAQACAwEAAAAAAAAAAAAAAAACBAADBgERAAIBBAIDAAAAAAAAAAAAAAABAwIFMVEVQREhMv/aAAwDAQACEQMRAD8AuGO5cs6yBhatqM1XeBZYurZK+h1Zcp4+qmzbsCJRVeoFhhq1S6BXnK+OQHrbkkTqvML7JxcuhU3LVHsdWvks5mDZOKk0Y1+XPbGKx9OpjJ8s1UXyHp1agu+ocgfIokE8keg7vkaqMxK/JbX6pXgXjbdbDONMYKGj/9k="
 					  data-srcset="Images/360w/CDMX-SFO-32-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-32-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-32-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-32-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-32-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xAB3AAACAgMAAAAAAAAAAAAAAAADBAAIAgYHEAABAwIDBQkAAAAAAAAAAAABAAIDBBIFBhEHITFBYRQVFiJRUnGBkQEAAwADAQAAAAAAAAAAAAAAAQIDBAYHABEAAgICAwADAAAAAAAAAAAAAAECBANRERQxBRVB/9oADAMBAAIRAxEAPwDuRw+jnaTFNG4dHLao3OPTRnVbE5sEicfK5h+1eN9bIypyYMZe15BV762KqUtGXhw+1D7BbD0mVvo844hh9K6PvWS71uXNu7ZkdOfx9WJGbSsUhILMQke4dVSNix62TdSv+IYG2fMMVrRNqNeayI2MuyLp4dGy0u2uu7Oy94u03pXYzc+nulh0V9qnuL97nfqPBQLS8D8LHzF8AKYm/jzTx8El6NMJsG8ojH//2Q=="
 					  data-srcset="Images/360w/CDMX-SFO-33-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-33-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-33-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-33-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-33-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xAByAAADAAMAAAAAAAAAAAAAAAADBQgAAgQQAAIBAwIFBQAAAAAAAAAAAAECAwAEBRExBgcIE1ESIkFhkQEBAAIDAQAAAAAAAAAAAAAAAgMEAAUGAREAAgEEAgMBAAAAAAAAAAAAAAECAwUxURVBBBEUIf/aAAwDAQACEQMRAD8AoCPMYCMAm5WrU7tTXZzqtctDS1vMTNGHjlUio+UhsnjaZNYCd7GupIkBAr1XOD7Mdrlo4nvMUrEGTanycNh4qeidIuY3BoYd+42+65J2utJ5OvXk0fX6MW52cHY+EpA5fQeasQtFT1kL8yksIRR9RuMW5aIWukPmrEbVJLJF9sNAJeoLCmRiIDvR4upsX2R0S27v6j7m/a30cGrZmpPyak6Asg2rELs0O9MR/9k="
 					  data-srcset="Images/360w/CDMX-SFO-34-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-34-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-34-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-34-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-34-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xABwAAADAQEAAAAAAAAAAAAAAAAEBgcIBRAAAQMEAQQDAQAAAAAAAAAAAQACBAMFBhEyBxIhMRMVQZEBAAEFAQAAAAAAAAAAAAAAAAQAAQIDBQYRAAICAgICAwAAAAAAAAAAAAABAgMEEQUxEiEUIlH/2gAMAwEAAhEDEQA/AMw4NR+2vVCFUOmOcASjlmNLRVHEUpGjIXRS3z7Z80eQRU7d+VXZyUa+2XR4xzfRH+omMScTuJjyPLDxciMblIW+gPK4qVXsVBKo65hHfIgZ7xZfhzsQub7Vd6cpmttP6udsg5LR0mPNQltlpuHVO6ULTTdCmNY/XFpWdHD3P7GpdlLwWibZhlV0yNwNwql+v1G1Y8aujPtvlYvYqlg37KI2wbSAGckxBhjHv0B3O/qckmGAnt9pMsXQO7kUiJ//2Q=="
 					  data-srcset="Images/360w/CDMX-SFO-35-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-35-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-35-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-35-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-35-512w.jpg"
 					  alt="">
 					<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xABnAAADAQEAAAAAAAAAAAAAAAABBgcCCBAAAQMEAwADAAAAAAAAAAAAAQACBgMEBTEHEiERIkEBAQEBAQAAAAAAAAAAAAAAAAACAQMRAQACAQUBAAAAAAAAAAAAAAABAhEDEiExQSL/2gAMAwEAAhEDEQA/AOOW6RRq43iVzLpBRxlv4Xn0qoxHZypvMHBtSERmnlDX7/I9Cr58TlCHbKkab0Gys4UYoVKbyL5Nt/j39ajdFZasWjC622nXkLmfNS+OjFX7g5o/VFdPbPZa8T4kTj9iumXIFgI0tBOlgyg//9k="
 					  data-srcset="Images/360w/CDMX-SFO-36-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-36-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-36-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-36-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-36-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xAB3AAACAwEAAAAAAAAAAAAAAAAHCAABBQIQAAEDAwMCBgMAAAAAAAAAAAEAAgMEBhEFIVEiMQcIEhMUF1JhkQEAAgMBAQAAAAAAAAAAAAAABAYAAgUBAxEAAQQCAgEFAAAAAAAAAAAAAAECAwQFERIhURMUIjFB/9oADAMBAAIRAxEAPwBerZoY5pWtd2XosiNCo4lk+gnW7odO+VjC3p5VXX2MTQYzEySfgRNLsunlYDCzJI4WVZyrXLrZrVsX6CbVDQ+uHO6vjnf9IL3qBfGMVLS9XoqWdrxNgZ3C15ebk6FqlM2J3YW7Pvy0qWFgq5uoDcpetVbb1+I0xZesxvQRtJ8ZLHoYxicHCAbjbW9qgPYyscnSKa48w9mtHp9wbIlKdrwZq2I/IhwJ5TegvHWTjuV1SFhzvyP9XELEyeSraJs//9k="
 					  data-srcset="Images/360w/CDMX-SFO-37-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-37-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-37-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-37-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-37-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xAByAAACAwEAAAAAAAAAAAAAAAAEBgIDBQcQAAAFAgUDBQAAAAAAAAAAAAECAwQFABEGEyExQRIiUQckQ5PRAQADAQEAAAAAAAAAAAAAAAACAwQBBREAAQQCAgMBAAAAAAAAAAAAAAECAxEEMRVREhQhQf/aAAwDAQACEQMRAD8A6a9QkmEYq5UHQhb3GjZnT3VgPwcdU0JsRjt6qmvZt1ZYiGvNdBmXJ+nNkw4r0DSOK5PMS6TCmZcbFLQSZkiD48GGtBGRipTvBcbG1qfkZCrjYehJmfV+fmXAMzslEGpxsbt4rfXaxLsxsrlU1IyRibEuZQo8gBd6FJKNczyHplGR0u1SdAkIKI6kuG9SzS9FETF0QXmpVBUyJI/qKQbAPmprH/StywY54eybfUX8qpVUnRECWzJkCxbNG4bfGFLVQhsRTTI1ACJlKFuAtSHlDDOVKXMNoG/ihDP/2Q=="
 					  data-srcset="Images/360w/CDMX-SFO-38-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-38-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-38-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-38-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-38-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xABtAAEAAwEAAAAAAAAAAAAAAAAGAwQHAhAAAQQBAwMFAAAAAAAAAAAAAQACAwQRBQYSEyFyMTM0NVEBAQADAQEAAAAAAAAAAAAAAAMCBAUAAREAAgICAgMAAAAAAAAAAAAAAAECAxExEiETFCL/2gAMAwEAAhEDEQA/ALGx98UaEbKDiQ93YZRqXLYkoNDytrJlHMjIPcJlwYP0jqbU8NJarVdMJbYNlsolM6lLns4K361ZWd8wPuPYTat2O1XYR0jnIWBF4Nl9iCtyFWLiSCAueTxYJZpZGQnJBH6npk1sG1Jgu9vGCtbkgOTwOFZ85BUN94Nl10A1JsgehWbDRalsGw+2miFIju/Gf4lLEgYbrP2ljzKCWzbpS4I//9k="
 					  data-srcset="Images/360w/CDMX-SFO-39-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-39-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-39-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-39-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-39-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xAB1AAADAQEAAAAAAAAAAAAAAAAEBQYCBxAAAgEEAQIFBQAAAAAAAAAAAQIDAAQFERIhQQYTIjGRFBUyUXEBAAICAgMAAAAAAAAAAAAAAAIDBQYEBwABCBEAAgICAgMBAQAAAAAAAAAAAAECAwQRBQYSITEyQf/aAAwDAQACEQMRAD8AxZYVzoBD8VuueTGP9PO08icnpDH7BIE5OvFajsjmKqVtskMLjMvLklGIJkcEiptPVsdqhJdxoW0XKnpeXHTkyffFpyO1IP8AKgbe1Wubcfha6OtUxrSl9Oute4W0gZw6Fl7U7K5pOD8WVvF6xq1eS9AyZC1yDqYpozGB1XdU6/Kttk22bExMOjHglBA2R+hjk5xzLoDqN1jeL3sznZtaJua8tGlZg0Y2aPbFehTes3kD1H2/dGISI6wubhPEMipcSqu/YOQKJ/kJfSkeWQo25HPTu1LDQqLNv8j812jh/9k="
 					  data-srcset="Images/360w/CDMX-SFO-40-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-40-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-40-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-40-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-40-512w.jpg"
 					  alt="">
 					<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xAB0AAABBAMAAAAAAAAAAAAAAAACAQUGCAMEBxAAAgEDBAEFAQAAAAAAAAAAAQIDAAQGBRESMSEHEyJBUWEBAAIDAQEAAAAAAAAAAAAAAAIDBAYHAAERAAIBBAICAwAAAAAAAAAAAAABAgMEETEFEgZBIjJR/9oADAMBAAIRAxEAPwBbTDIlHyYVp9Xn7en7MnpcLfVno3NOx6FZniVRyHiq5X8gjcVer0WyhwM7Wh3z8hmyHEYlaRiRv3VjpcvbdFFsrErC97uSiQuXH7cSMD+/lc+Vs87JUbO+x9TrupZfj+jWQnuZkO/Q3rKes5GlpxWkHo+t2d7bHUrVS6P1tQODSHOaawBMl3fF3WMcT1yryMpZzkJqHTCRgTRrcqPciTn91zqSAUY/hWPOppmeBWlkI5dFjU6OiP7LD+hgDYtGGAI2HdIraDjsnmpgJxCgKP54pHoYNLk8j5pb2OWj/9k="
 					  data-srcset="Images/360w/CDMX-SFO-41-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-41-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-41-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-41-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-41-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIAAsAGwMBEQACEQEDEQH/xAB2AAACAwEAAAAAAAAAAAAAAAADCAABBQcQAAIBAwMDBQAAAAAAAAAAAAECAwAEBQYREgcxkRYhMjNRAQABBAMAAAAAAAAAAAAAAAADAAQFBgECBxEAAgEDAwMFAAAAAAAAAAAAAQIAAwQRBRMhBiJREiMxUmL/2gAMAwEAAhEDEQA/AA9L+puJu7wWWUCxufi37VgXWajjvlTq9NIre3O0eoMRb2wlSMupG4Ips+o+s4BhF0AqMmYw1ZYrcvNKrGI9l2rWypXBqlmfiYv0tkpBFTugX1vieR2tZPFTXP2kPtfkxR8WiLkrdlUBuY9xVPycToaxp9NgPpqIuAx4DvTU8GHlvBCQN418UQVXHwYPaRjyJDa2+/0p4pbr+Ytmn4n/2Q=="
 					  data-srcset="Images/360w/CDMX-SFO-42-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-42-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-42-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-42-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-42-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIAAsAGwMBEQACEQEDEQH/xABwAAACAwEAAAAAAAAAAAAAAAAFBgMEBwgQAAEEAQMCBwAAAAAAAAAAAAECAwQFABETURIxISIkQUJxkQEAAwEBAAAAAAAAAAAAAAAAAgMEBgcRAAIBAwQDAAAAAAAAAAAAAAABAgMGMREWIVISMlH/2gAMAwEAAhEDEQA/AK9bcUu2F7iSNec3FS6k8I5irJqy9pDVWTqR4JG4jzDnIpXHJlMbIglyyWUqj0Or6Un7w4XO1kCVjdWC1OUHUfWt/uUbrj8F7HqdjnRMmQglKXVBOvbMcoo6M2wpW2E0S2gJLg8R74yMV4gas2SojMSqIuvthxfT3ORVVo+CqGBLlRmBIcAR8uTiWxqP/9k="
 					  data-srcset="Images/360w/CDMX-SFO-43-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-43-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-43-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-43-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-43-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xABtAAADAQEAAAAAAAAAAAAAAAAFBgcDCBAAAgIBAwMDBQAAAAAAAAAAAQIDBAAFBxEGEjEiMnETFSFhkQEAAwEBAAAAAAAAAAAAAAAAAQIDAAQRAAICAgMBAAAAAAAAAAAAAAABAhEDIQQiMRP/2gAMAwEAAhEDEQA/AKLvXdg1DpOxQvThjIvCr+86VxpPaEx8yMU0zlertLLbV5hOi9xJUE43yA8iZStiqendC3pxdm7bB9rDDHjtiSzVops27GgJKyPMCwPBOX6rQnZivune+jGkkimRT4yt0qOdY72T7Q9SknklZyyKPYAfOTaZVaCelWatuRobcHMvPpOFNozVvRnY6eqNM7GH8k5N3ZZeDhuMqtpo7gD8jHl4TXpPKAA8ADETMw3oSr9wU9o5+MI8RokVe8+kfzCY/9k="
 					  data-srcset="Images/360w/CDMX-SFO-44-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-44-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-44-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-44-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-44-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xAB1AAADAQEAAAAAAAAAAAAAAAAEBQcGAxAAAgEDAwMDBQAAAAAAAAAAAQIDAAQFBxEhBhJBExQiFzFCUWEBAAEEAwAAAAAAAAAAAAAAAAQAAwUGAQIHEQACAgIBBAMAAAAAAAAAAAABAgADBBEFBhIhMRMUQf/aAAwDAQACEQMRAD8As3VOo+QscaLiG35P3FDEWKJP8Rh4+Xb2udSejWW+nnkR5Cu3jemU+RzLRyPHcdxyAnyYOdaJ4mZXnZT43NbutijcBwzx2VYE1rc5/WXJHkTnY/2hfsNLeOksYjYE2mesrbK44W8h7P2RU4w8anF6bmqbuWRnUHp+1wt/C1mWdWPyIppVAhV+VdkeXMUQdLDP3g7S8abcnasuARqa495psVx+R6mmkaqB748UCcUS/wBfXLIoXXqVwk+geTUq05mPcy+djjkdfURX5/Ib00YXX6h2GhiWL4xIvHhQKxGjCWA7jwKUU//Z"
 					  data-srcset="Images/360w/CDMX-SFO-45-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-45-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-45-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-45-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-45-512w.jpg"
 					  alt="">
 					<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xABwAAACAwEAAAAAAAAAAAAAAAAFBwEEBgkQAAEDAwMDBQEAAAAAAAAAAAECAwQABSEGERIUMVEHFiJBkVQBAAMBAQEAAAAAAAAAAAAAAAECBAADBREAAwACAgMBAAAAAAAAAAAAAAECAxESMSEiUUH/2gAMAwEAAhEDEQA/AMDYBe+tbmzSlDSVclcjXr5MaS0mQLI6Y5NG60gR5YmMvIWpsAKG9SXNKSnDCqtDWtnqZYpPBLjqUkjOa4cb/DrUJPyE/fOnv6U/tNwy/BfQ5+WDUsy7LVHnPqQ19kGrVrtk7n4Sq7rtU1aITq1Nk9/NFUqNpybyz3QOQGn1u8XCM5rqnKNqmWTeHN8Pq/aPJB4CStWFHbGakyDwHZqU7NfEdvFNiBkDdpJ6YDc1n2PPReBO3c0TH//Z"
 					  data-srcset="Images/360w/CDMX-SFO-46-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-46-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-46-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-46-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-46-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xABtAAADAQAAAAAAAAAAAAAAAAAFBgcIEAACAQMDAwMFAAAAAAAAAAABAgUAAwQGETEHEyESFCIjNFFSYQEAAgMBAAAAAAAAAAAAAAAAAwQBAgUGEQADAAMBAQEAAAAAAAAAAAAAAQIDEiERBCL/2gAMAwEAAhEDEQA/AKzo7UOTFRxt5TIyqu4805U1YpGSYFiY612sXMv2xkKCjbAUZfKmugn9b94UDRXUmOkINMvKugMw53pDP89KuDuLMqn1hpNdRJUHuil9MgfeTMjyIt4jWnk2DbcFq6CZiTHqarvhNpnLjxm3N07jE80veaveDMYJ86NOj5w28dMcN9L9d6LFK56DqdXwbVnbagKG2AqdYI/RI5e4/vLvzbn80k29jUzJaoGqASSQCf7UC6DOlfu6vBSxkcn1HyaKVR//2Q=="
 					  data-srcset="Images/360w/CDMX-SFO-47-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-47-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-47-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-47-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-47-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xABuAAEAAgMAAAAAAAAAAAAAAAAFAQIDBgcQAAIBAwMEAQUAAAAAAAAAAAIDAQAEBQYHERITMVEiFBYyQnIBAQEBAQAAAAAAAAAAAAAAAAMEAQIRAAICAgMBAQAAAAAAAAAAAAABAgMRMRITIQQi/9oADAMBAAIRAxEAPwAzc7dJtzLgaAiDo4GqVQlsOTbfgfpjUebyOknW1qsCUI/lPninjTBrKBlzz6I7aa6v8Wz6FFuPeWXVPua4nTnQtfmzen76Z9TSXGOP4zx4oehj5icvye0lzl5WV3fguR/Xmq3S5EztxoSssRaaZUrDruOomfEpiaRVcUc9jkPaa26tLTInl1ZdRsMee3JUP6jL0RYaMd8a1XjVkoJkS4madWxM4SC8JcXB6lATe0h9SczFa9hIE1aRfeXHVPn3VcNBPZfK3Fwty+29ofycxUf0bKaSRa0hgiYczPmZKaiLD//Z"
 					  data-srcset="Images/360w/CDMX-SFO-48-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-48-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-48-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-48-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-48-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xABxAAEAAwEAAAAAAAAAAAAAAAAHAgMFBhAAAQIFAgUEAwAAAAAAAAAAAQIDAAQFBhEHMRITFkFRISIzQkNhoQEBAAMBAAAAAAAAAAAAAAAAAgADBAERAAICAgIDAAAAAAAAAAAAAAABAhESMQNBEyJR/9oADAMBAAIRAxEAPwA8e1cvZtjlJnFJGMDBi9NBm3N2y63rgv6uKUsVNzB2GYabYGkK+llTrlGmga1NKmA76FBO0ROT0SomfdlSpRuKdPKAy5n+CD5ZoeEQ0uS0ZlqUW7TkpmEAbiE4fDll2mlbZosg+idbKH0q+wjsFQWxLp9Tam22phsApUOLi8RdisbK0/YKLvrrfUs9hz8nn9CM5oo7LT9SlyhC1FQxsTmFxnJmbfTDKFOFLLaTjskCL5GfsjYrizTHQVqIAOBmJ0NbCC6VK6hnfcflPeMz2XI//9k="
 					  data-srcset="Images/360w/CDMX-SFO-49-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-49-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-49-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-49-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-49-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xABpAAEAAwEAAAAAAAAAAAAAAAAHBQYJCBAAAQMDAwMFAAAAAAAAAAAAAQIDBAAFEQYHIRQxMhIiQUKRAQEBAQEBAAAAAAAAAAAAAAADAgQFABEAAgMBAQAAAAAAAAAAAAAAAAECBBEDMf/aAAwDAQACEQMRAD8AO9i7z1V0ciTXEhLf2Jrq8LssxmOxwXsTpbTl3sjbXoMpvgcjNVO1rwGNd5pfNJXG1dIp1iY2Wie2a5vfulI6PCvJrMLE2/FcQFpWCDyOahWFhUq7TzDKGxXaXCeK47ym1K7kGkiyWtL9pbUF0clJQmU6oqHPupYxTZLbSwUtsLxdXZT8N+U422hWRk0cqi6M1cLj4DLE1DIajobEzxGO9WqKSAnccpNme8XyoUeEHbUA3ZrIzWmAchlsACZTxSADn4rRzCmToUrHkf2nRJ//2Q=="
 					  data-srcset="Images/360w/CDMX-SFO-50-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-50-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-50-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-50-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-50-512w.jpg"
 					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xAB0AAACAwEAAAAAAAAAAAAAAAADBQQGBwgQAAEDAwEHBQAAAAAAAAAAAAECAxEABAUSBgchImFxkRMXMTJBAQADAQEBAAAAAAAAAAAAAAABAgQFAAYRAAICAQQCAwAAAAAAAAAAAAABAgMxERIUIRMVIkFR/9oADAMBAAIRAxEAPwC54i9ISlWoVktxwWRhJ9ltYuUPW6SVQYqRycZFyr3R7BHJvIdCECYPzRkors6Kk/joNm8mdA1KExxqKVvZcqHoYHb7X4S3IDt6kEfgNamy36RE1SssYe5uzlukJF9JHWl8Nryg+SlYZEu972DaEtvT1ocSbyhuTXFapi875cdPBZjvR9ewc9fpzgp1w3JlxZ7qreSPPSbA3KleseY+aZITUjuKVH2PmuaHTAqWqTzK80o5/9k="
 					  data-srcset="Images/360w/CDMX-SFO-51-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-51-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-51-750w.jpg 750w"
-					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-51-750w.jpg"
+					  sizes="(min-width:761px) 50vw"
+					  data-src="Images/750w/CDMX-SFO-51-512w.jpg"
 					  alt="">
 				
 				<script src="https://cdn.rawgit.com/tuupola/jquery_lazyload/0a5e0785a90eb41a6411d67a2f2e56d55bbecbd3/lazyload.js"></script>
