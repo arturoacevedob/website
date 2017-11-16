@@ -11,81 +11,190 @@
 
 		<style>
 
+			/* -------- Global -------- */
+			
 			html {
 				margin: 0;
 				padding: 0;
-
+				
 				font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
 				font-size: calc(0.75em + 1vmin);
 			}
-
+			
+			/* >------- Typography -------< */
+			
+			a {
+				text-decoration: none;
+				color: inherit;
+			}
+			
+			a:hover {
+				text-decoration: none;
+				color: #007AFF; /* A-BLUE */
+			}
+			
+			brand a:hover {
+				color: #707C80; /* STONE */
+			}
+			
+			a:active {
+				color: #0056BA; /* A-BLUE-DARKER */
+			}
+			
+			a.active {
+			  color: #007AFF; /* A-BLUE */
+			}
+			
+			brand a {
+				color: #131516; /* JET */
+			}
+			
+			nav ul li a {
+				color: #373D3F; /* RAVEN */
+			}
+			
+			h1 {
+				color: #131516; /* JET */
+			}
+			
+			h2 {
+				color: #373D3F; /* RAVEN */
+			}
+			
+			p {
+				color: #373D3F; /* RAVEN */
+			}
+			
+			/* >>>>>>>> Colors >>>>>>>>
+				
+			JET			color: #131516;
+			RAVEN		color: #373D3F;
+			INDIGO		color: #093145;
+			KELLY		color: #0D3C55;
+			ALICE		color: #107896;
+			A-BLUE		color: #007AFF;
+			RUBY		color: #C02F1D;
+			A-RED		color: #FF3B30;
+			DAISY		color: #EFD469;
+			A-YELLOW	color: #FFCC00;
+			STONE		color: #707C80;
+			LILIA		color: #F2F3F4;
+				
+			   <<<<<<<< Colors <<<<<<<< */
+			
+			/* ------- Body & Grid -------< */
+			
 			body {
 				margin: 4vh 3vw;
 				min-width: 100px;
-
+				
 				display: grid;
 				grid-template-rows: 1em 1fr 8vh;
 				grid-template-columns: auto;
 				grid-gap: 3vh;
 			}
-
-			@media (max-width: 370px) {
-				#nav-brand {
-					display: none;
-				}
+			
+			/* >>------ Header ------<< */
+			
+			header {
+				
 			}
-
-			@media (min-width: 370px) {
-				#nav-brand-small {
-					display: none;
-				}
-			}
-
+			
+			/* >>>----- Navigation -----<<< */
+			
 			nav {
 				text-align: center;
 			}
-
+			
+			/* >>>>---- Brading ----<<<< */
+			
 			brand {
 				display: inline;
 				padding: 0 1vw;
 				font-weight: 900;
 			}
-
+			
+			@media (max-width: 370px) {
+				#nav-brand {
+					display: none;
+				}
+			}
+			
+			@media (min-width: 370px) {
+				#nav-brand-small {
+					display: none;
+				}
+			}
+			
 			nav ul, nav li {
 				padding: 0 1vw;
 				display: inline;
 				text-align: center;
 			}
-
-			a {
-				text-decoration: none;
-				color: inherit;
+			
+			/* >>------ Container ------<< */
+			
+			container {
+			
 			}
-
-			a:hover {
-				text-decoration: none;
-				color: #007AFF; /* A-BLUE */
+			
+			/* >>>----- Gallery -----<<< */
+			
+			.gallery {
+				-webkit-column-count: 5;
+				-webkit-column-gap:   2vw;
+				-moz-column-count:    5;
+				-moz-column-gap:      2vw;
+				column-count:         5;
+				column-gap:           2vw;
 			}
-
-			brand a:hover {
-				color: #707C80; /* STONE */
+			@media (max-width: 1920px) {
+				.gallery {
+				-webkit-column-count: 4;
+				-webkit-column-gap:   2vw;
+				-moz-column-count:    4;
+				-moz-column-gap:      2vw;
+				column-count:         4;
+				column-gap:           2vw;
+				}
 			}
-
-			a:active {
-				color: #0056BA; /* A-BLUE-DARKER */
+			@media (max-width: 1365px) {
+				.gallery {
+				-moz-column-count:    3;
+				-webkit-column-count: 3;
+				column-count:         3;
+				}
 			}
-
-			a.active {
-			  color: #007AFF; /* A-BLUE */
+			@media (max-width: 1024px) {
+				.gallery {
+				-moz-column-count:    2;
+				-webkit-column-count: 2;
+				column-count:         2;
+				}
 			}
-
+			@media (max-width: 768px) {
+				.gallery {
+				-moz-column-count:    1;
+				-webkit-column-count: 1;
+				column-count:         1;
+				}
+			}
+			
+			
+			/* >>>>---- Images ----<<<< */
+			
+			.gallery {
+			
+			}
+			
 			img {
 				height: auto;
-				width: 100%;
-				box-shadow: 0px 8px 15px #ddd;
+				width: 100%; box-shadow: 0px 8px 15px #ddd;
 				margin: 1vh 0;
 			}
-
+			
+			/* >>------ Footer ------<< */
+			
 			footer  {
 				position: relative
 				color: grey;
@@ -93,7 +202,7 @@
 
 		</style>
 
-		<link rel="stylesheet" type="text/css" href="Stylesheets/style.css"  media="none" onload="if(media!='all')media='all'"/>
+		<!-- <link rel="stylesheet" type="text/css" href="Stylesheets/style.css"  media="none" onload="if(media!='all')media='all'"/> -->
 
 	</head>
 
@@ -130,14 +239,16 @@
 							 Images/512w/CDMX-SFO-01-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-01-750w.jpg 750w"
 					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-01-750w.jpg" alt="Agave fields landscape near Tequila town.">
+					  data-src="Images/750w/CDMX-SFO-01-750w.jpg"
+					  alt="Agave fields landscape near Tequila town.">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIAA8AGwMBEQACEQEDEQH/xABtAAACAwEAAAAAAAAAAAAAAAAEBgIFBwgQAAEEAgICAwAAAAAAAAAAAAECAwQFABEGEjGRFUFCAQADAQAAAAAAAAAAAAAAAAACBAYDEQACAgAFBQEAAAAAAAAAAAABAwACBAUhMVEREhQiQRX/2gAMAwEAAhEDEQA/ANYqbShXpDMtr3lS3GAnUyMXgzXQCWVnf1NfCK1SW9AeAcRZjF01JjlMKy/qBEmTzinkSCgpOifOErO1V+wG5M2xgy76kKydn1jgz9PMU/CdxOdeI8sXIG1OOoJ+wTkdRNwNTLX0B2jszbJlslBddc0P0TiLcO7rvNO+o2ED+SERZBR21mXhtOvWEHVHyQVyNRUerQ1geIzmaB8//9k="
 					  data-srcset="Images/360w/CDMX-SFO-02-360w.jpg 360w,
 							 Images/512w/CDMX-SFO-02-512w.jpg 512w,
 							 Images/750w/CDMX-SFO-02-750w.jpg 750w"
 					  sizes="(min-width:769px) 512px"
-					  data-src="Images/750w/CDMX-SFO-02-750w.jpg" alt="">
+					  data-src="Images/750w/CDMX-SFO-02-750w.jpg"
+					  alt="">
 				<img class="lazyload"
 					  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIABIAGwMBEQACEQEDEQH/xABzAAACAwEAAAAAAAAAAAAAAAAEBwIFBggQAAIBBAEBBgcAAAAAAAAAAAECBAADBREGUQcUISIxkTRDU2JxgYIBAAIDAQAAAAAAAAAAAAAAAAMEAAECBREAAgEEAwEAAAAAAAAAAAAAAAECAwQxQREUURL/2gAMAwEAAhEDEQA/AOp43LcRf0LchT+656vqS2N9Op4H2szj7h0t9N/mjK6pywwbt5x0SefDPz096jmngr4ksoHM6Fv4hPeslCrwvD75RWW+U16kmkJ2MGPwvZcBWYxy4aMZEieAB0aorSMdmu1KWjE5Pm+KjeDZJhs6PmoippPJUptrBWP2g8cVipzTbH3UwkvRV8+DeyrumDuFHZT1B1Wa+DNER3anLlGJoyb2tfUNL0mNtCMzt24T43HP9URkMVKd+8P529etGQF5P//Z"
 					  data-srcset="Images/360w/CDMX-SFO-03-360w.jpg 360w,
