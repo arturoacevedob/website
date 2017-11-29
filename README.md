@@ -10,7 +10,7 @@ As of right now, only the gallery is functioning well.
 
 ## Issues
 
-### Gallery
+#### Gallery
 I'm implementing a responsive gallery (with columns) with responsive images in [gallery.html](https://arturoacevedob.github.io/website/Photos.html) formatted for [lazy loading](https://appelsiini.net/projects/lazyload/). After 760px the gallery turns into 2 columns, at 1365px 3 columns, at 1920px or higher 4 columns.
 
 ```
